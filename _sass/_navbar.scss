@@ -1,0 +1,91 @@
+#mainNav {
+  min-height: 56px;
+  padding: 0rem 1rem;
+  background: linear-gradient(to bottom, rgba(0,0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  &.navbar-shrink {
+    background-color: $black;
+  }
+
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem 0.75rem 0.25rem;
+    color: $white;
+    border: 1px solid $white;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    color: $white;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    padding: .9rem 0;
+  }
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+    .nav-link {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  .navbar-collapse {
+    background-color: rgba(0,0, 0, 0.5);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+  }
+
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    .navbar-brand {
+      padding: .5rem 0;
+      
+    }
+    .nav-link {
+      font-size: 1.5rem;
+      transition: none;
+      padding: 1.5rem 1rem;
+      color: $white;
+      &:hover {
+        color: fade-out($white, .25);
+      }
+      &:active {
+        color: $primary;
+      }
+    }
+    &.navbar-shrink {
+      .nav-link {
+        
+        padding: 1.5rem 1rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+        
+        &.active {
+          outline: none;
+          border-bottom: 0.25rem solid $primary;
+          
+        }
+      }
+    }
+    .navbar-collapse {
+      background-color: rgba(0,0, 0, 0);
+      padding: 0rem;
+      border-radius: 0rem;
+
+    }
+  }
+}

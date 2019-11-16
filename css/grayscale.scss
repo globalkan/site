@@ -1,0 +1,57 @@
+---
+---
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'video.scss';
+@import 'photos.scss';
+@import 'contact.scss';
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: $primary;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($primary, 20%);
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  p {
+    margin-bottom: 5rem;
+  }
+
+  &.odd {
+    background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .2)} 65%,#{fade-out($black, 1)} 100%);
+  }
+  &.even {
+    background: linear-gradient(to bottom, $white 0%, #{fade-out($black, 0.3)} 65%, #{fade-out($black, 0)} 100%);
+    color: $gray-900;
+  }
+}

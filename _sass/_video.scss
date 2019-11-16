@@ -1,0 +1,16 @@
+.video-section {
+
+  .video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 12rem;
+  }
+  @media (min-width: 992px) {
+    .video {
+      width: 60rem;
+      height: 36rem;
+    }
+  }
+
+}
