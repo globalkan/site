@@ -81,9 +81,9 @@
   <section id="about" class="about-section text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h1 class="text-white mb-4">About</h1>
-          <p class="text-white-50">{{ page.about }}</p>
+        <div class="col-lg-12 mx-auto text-white">
+          <h1 class="mb-4">About</h1>
+          {{ page.about | markdownify }}
         </div>
       </div>
     </div>
@@ -96,7 +96,7 @@
         <div class="col-sm-12 mx-auto">
           <h1 class="text-black mb-4">Music</h1>
 
-          <h2 class='text-black'>Watch on Youtube</h2>
+          <h2 class='text-black'>Live on Youtube</h2>
           <div class="youtube">
             <iframe src="https://www.youtube.com/embed/videoseries?list=PLzMCFm1tKkX4XQmXSY8pQDUsRT-dVtLIX"
               frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
